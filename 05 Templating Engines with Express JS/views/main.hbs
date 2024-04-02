@@ -1,0 +1,16 @@
+<h1>Movie App</h1>
+
+{{!-- 
+--> In Handlebars templating language, the > symbol is used to denote a partial template. 
+
+--> {{> partialName }}: This syntax is used to include a partial template named partialName within the current template. --}}
+
+{{> favMovies }}
+{{> dislikedMovies }}
+
+<h2>Similar Movies:</h2>
+<ul>
+    {{#each suggestedMovies }}
+        <li class="{{this.color}}">{{this.name}}</li>
+    {{/each}}
+</ul>

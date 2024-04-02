@@ -1,0 +1,23 @@
+li {
+    font-size: 3rem;
+    width: 400px;
+    margin-top: 10px;
+    padding: 5px;
+    color: aliceblue;
+}
+
+li::marker {
+    color: #414141; /* To set bullets color to black */
+}
+
+body {
+    background-color: aquamarine;
+}
+
+.odd {
+    background-color: blue;
+}
+
+.even {
+    background-color: green;
+}
